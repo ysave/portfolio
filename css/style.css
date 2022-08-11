@@ -39,3 +39,49 @@ a{
 li{
     list-style: none;
 }
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.nav-link{
+    font-size: 0.94rem;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    color: var(--bg-color);
+}
+
+.nav-link:hover{
+    color: var(--main-color);
+    background: var(--container-color);
+    transition: 0.3s all linear;
+}
