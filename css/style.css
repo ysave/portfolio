@@ -59,6 +59,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    background: var(--body-color);
 }
 
 .logo{
@@ -205,4 +206,64 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/* Projects */
+.projects-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.project-box{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.overlay{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(234,45%,16%,0.7);
+}
+
+.overlay h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.overlay .bx{
+    font-size: 14px;
+    padding: 10px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 4px;
+}
+
+.overlay .bx:hover{
+    background: #546eff;
+    transition: 0.3s all linear;
+}
+
+.project-box:hover .overlay{
+    top: 0;
+    transition: 0.3s all ease 0s;
 }
