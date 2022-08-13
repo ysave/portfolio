@@ -14,7 +14,7 @@
     --main-color:#647bff;
     --body-color:#090a1a;
     --container-color:#171b3c;
-    --heading-color:#222321;
+    --heading-color:#222231;
     --box-color:#0d0f26;
     --bg-color:#fff;
 }
@@ -67,6 +67,7 @@ header{
     color: var(--main-color);
 }
 
+/* Navbar */
 .navbar{
     display: flex;
     align-items: center;
@@ -86,8 +87,9 @@ header{
     transition: 0.3s all linear;
 }
 
+/* Menu */
 .menu-icon{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -115,4 +117,55 @@ header{
 
 .move .line3{
     transform: rotate(45deg) translate(-5px,-5px);
+}
+
+/* Home */
+.home{
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 7rem;
+}
+
+.home-content{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.home-img{
+    /* Img TODO */
+}
+
+.home-text{
+    /* TODO */
+}
+
+.home-text h3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+.home-text h2{
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+}
+
+.home-text p{
+    font-size: 0.94rem;
+    margin-top: 1.5rem;
+}
+
+.home-text .color{
+    color: var(--main-color);
 }
