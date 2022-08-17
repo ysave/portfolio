@@ -250,6 +250,12 @@ header{
     margin-bottom: 10px;
 }
 
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 .overlay .bx{
     font-size: 14px;
     padding: 10px;
