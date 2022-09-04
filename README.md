@@ -1,6 +1,4 @@
 # portfolio
-My Portfolio
-
 My portfolio website, containing additional informations
 about me and my projects.
 
